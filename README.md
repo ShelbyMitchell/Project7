@@ -13,7 +13,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.4
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: [Here](https://github.com/ShelbyMitchell/Project7/blob/master/Exploit%231XSS.gif)
   - [x] Steps to recreate: 
     - Go to posts and create a new post
     - Enter (w/ tags) into title slot: a href= " " onmouseover= "alert('XSS!');>CLICK THIS LINK< /a
