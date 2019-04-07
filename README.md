@@ -8,7 +8,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID: Exploit #1 (XSS w/ a Link)
+1. (Required) Vulnerability Name or ID: Exploit #1 (XSS w/ a Link in Title)
   - [x] Summary: Able to add XSS within hyperlinks when creating the title of a post, activates when hovering mouse over link.
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -20,14 +20,18 @@ Time spent: **X** hours spent in total
     - Click to view the post, and as you hover your mouse over the title, an alert will pop up that reads "XSS!"
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+1. (Required) Vulnerability Name or ID: Exploit #2 (XSS w/ Hidden Link in Image)
+  - [x] Summary: Able to add XSS within an image tag that activates when the mouse is hovering over it.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2 
+    - Fixed in version: 4.6
+  - [x] GIF Walkthrough: [Here](https://github.com/ShelbyMitchell/Project7/blob/master/Exploit%232XSSImage.gif)
+  - [x] Steps to recreate: 
+     - Go to posts and create a new post
+     - Enter in an image tag w/ text
+     - In between 'alt = "..."' and 'width = ""', enter in: onmouseover="alert('XSS Attack!')"
+     - Click to view post, and as you hover your mouse over the image, an alert will pop up that reads "XSS Attack!"
+  - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
