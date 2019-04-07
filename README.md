@@ -8,14 +8,17 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+1. (Required) Vulnerability Name or ID: Exploit #1 (XSS w/ a Link)
+  - [x] Summary: Able to add XSS within hyperlinks when creating the title of a post, activates when hovering mouse over link.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.4
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+  - [x] Steps to recreate: 
+        1. Go to posts and create a new post
+        2. Enter (w/ tags) into title slot: a href= " " onmouseover= "alert('XSS!');>CLICK THIS LINK< /a
+        3. Click to view the post, and as you hover your mouse over the title, an alert will pop up that reads "XSS!"
+  - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
