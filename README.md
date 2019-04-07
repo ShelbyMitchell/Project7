@@ -15,9 +15,12 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.4
   - [ ] GIF Walkthrough: 
   - [x] Steps to recreate: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Go to posts and create a new post
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Enter (w/ tags) into title slot: a href= " " onmouseover= "alert('XSS!');>CLICK THIS LINK< /a
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Click to view the post, and as you hover your mouse over the title, an alert will pop up that reads "XSS!"
+  <br>
+      1. Go to posts and create a new post
+  <br>
+      2. Enter (w/ tags) into title slot: a href= " " onmouseover= "alert('XSS!');>CLICK THIS LINK< /a
+  <br>
+      3. Click to view the post, and as you hover your mouse over the title, an alert will pop up that reads "XSS!"
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
